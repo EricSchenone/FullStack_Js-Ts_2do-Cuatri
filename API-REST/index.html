@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Stock</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Control de Stock</h1>
+    <div class="tabla" id="tabla-container">
+        <table>
+            <thead>
+                <td>ID</td>
+                <td>Nombre</td>
+                <td>Tipo</td>
+                <td>Categoria</td>
+                <td>Stock</td>
+                <td>Precio</td>
+            </thead>
+            <tr>
+                <td id="ID"></td>
+                <td><input id="nombre" type="text"></td>
+                <td><input id="tipo" type="text"></td>
+                <td><input id="categoria" type="text"></td>
+                <td><input id="stock" type="text"></td>
+                <td><input id="precio" type="text"></td>
+                <td><button id="cargar">Cargar producto</button></td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="form-container">
+        <form id="formulario-modificar">
+            <h2>Modificar Producto</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+
+            <label for="tipo">Tipo:</label>
+            <input type="text" id="tipo">
+
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio">
+
+            <label for="stock">Stock:</label>
+            <input type="text" id="stock">
+
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria">
+            
+            <label for=""></label>
+            <input type="submit" value="Guardar">
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
